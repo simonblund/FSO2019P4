@@ -7,10 +7,10 @@ const bodyParser = require('body-parser');
 const app = express();
 const cors = require('cors');
 
-const blogsRouter = require('./controllers/blogs');
 
-const middleware = require('./utils/middleware');
 const mongoose = require('mongoose');
+const middleware = require('./utils/middleware');
+const blogsRouter = require('./controllers/blogs');
 
 console.log('connecting to', config.MONGODB_URI);
 
